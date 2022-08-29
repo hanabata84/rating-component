@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import RatingBtn from './RatingBtn'
 import { TiStarFullOutline } from 'react-icons/ti'
 
@@ -10,6 +10,16 @@ const Rating = (props) => {
         heading: `md:text-4xl text-3xl font-medium mt-10 mb-5`,
         submitBtn: `w-[385px] h-[42px] bg-btnOrage text-white rounded-3xl tracking-widest text-sm hover:bg-white hover:text-btnOrage`
     }
+
+
+    const [rateSelected, setRateSelected] = useState(0)
+
+    function getRating(rating) {
+        setRateSelected(rating)
+        console.log('I was clicked!')
+        console.log(rating)
+    }
+
     return (
         <div className={style.container}>
             {/* Start Button */}
@@ -25,13 +35,13 @@ const Rating = (props) => {
 
             {/* Rating Container */}
             <div className={style.ratingCont}>
-                <RatingBtn rating={1} />
-                <RatingBtn rating={2} />
-                <RatingBtn rating={3} />
-                <RatingBtn rating={4} />
-                <RatingBtn rating={5} />
+                <RatingBtn rating={1} getRating={getRating} />
+                <RatingBtn rating={2} getRating={getRating} />
+                <RatingBtn rating={3} getRating={getRating} />
+                <RatingBtn rating={4} getRating={getRating} />
+                <RatingBtn rating={5} getRating={getRating} />
             </div>
-            <button onClick={props.handleSubmit} className={style.submitBtn}>SUBMIT</button>
+            <button onClick={() => props.handleSubmit(rateSelected)} className={style.submitBtn}>SUBMIT</button>
         </div>
     )
 }

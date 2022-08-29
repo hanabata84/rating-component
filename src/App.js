@@ -9,16 +9,17 @@ function App() {
   }
 
   const [rateSubmit, setRateSubmit] = useState(false)
+  const [rateSelected, setRateSelected] = useState(0)
 
-  function handleSubmit() {
+  function handleSubmit(rating) {
     setRateSubmit(true)
+    setRateSelected(rating)
   }
   return (
     <div className="App">
       <div className={style.body}>
         <div className={style.container}>
-          {rateSubmit ? <RateComplete /> : <Rating handleSubmit={handleSubmit} />}
-
+          {rateSubmit ? <RateComplete rateSelected={rateSelected} /> : <Rating handleSubmit={handleSubmit} />}
         </div>
       </div>
     </div>

@@ -7,11 +7,11 @@ const style = {
     heading: `md:text-4xl text-3xl font-medium mt-7 mb-5`,
     text: `text-textGrey text-center mx-3`
 }
-const RateComplete = () => {
+const RateComplete = (props) => {
     return (
         <div className={style.container}>
             <img className='h-[180px]' src={transactIcon} alt="/" />
-            <div className={style.ratingResult}>You selected 4 out of 5</div>
+            <div className={style.ratingResult}>{`You selected ${props.rateSelected} out of 5`}</div>
             <h1 className={style.heading}>Thank you!</h1>
             <p className={style.text}>
                 We appreciate you taking the time to give a rating.
