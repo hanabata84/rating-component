@@ -6,8 +6,8 @@ const Rating = (props) => {
     const style = {
         container: `my-8 mx-9`,
         ratingCont: `flex justify-between items-center my-7`,
-        starLogo: `md:w-[75px] md:h-[75px] w-[60px] h-[60px] bg-transBlue rounded-full flex justify-center items-center`,
-        heading: `md:text-4xl text-3xl font-medium mt-10 mb-5`,
+        starLogo: `w-[60px] h-[60px] bg-transBlue rounded-full flex justify-center items-center`,
+        heading: `text-3xl font-medium mt-10 mb-5`,
         submitBtn: `w-[385px] h-[42px] bg-btnOrage text-white rounded-3xl tracking-widest text-sm hover:bg-white hover:text-btnOrage`
     }
 
