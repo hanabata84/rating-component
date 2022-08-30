@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rating-component/static/css/main.0f46cf42.css",
+    "main.js": "/rating-component/static/js/main.523a3bf8.js",
+    "static/media/component_bg.png": "/rating-component/static/media/component_bg.4305bb993c3e9448a3eb.png",
+    "static/media/transac_icon.svg": "/rating-component/static/media/transac_icon.09fe04a6af04d71ebc68cb266b725a33.svg",
+    "index.html": "/rating-component/index.html",
+    "main.0f46cf42.css.map": "/rating-component/static/css/main.0f46cf42.css.map",
+    "main.523a3bf8.js.map": "/rating-component/static/js/main.523a3bf8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f46cf42.css",
+    "static/js/main.523a3bf8.js"
+  ]
+}
